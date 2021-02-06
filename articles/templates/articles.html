@@ -1,5 +1,19 @@
 {% extends 'main.html' %}
 
+{% block featured %}
+
+{% for article in articles %}
+    <div class="span3 latest-article" id="first-art">
+        <div class="latest-article-wrap">
+            <a href='#'><img src="{{ article.image.url }}" class="img-rounded"></a>
+            <p>{{ article.content | truncatewords:11 }}</p>
+            <a href="/article/{{ article.id }}/" class="label label-info pull-right">Więcej</a>
+        </div>
+    </div>
+{% endfor %}
+
+{% endblock %}
+
 {% block article %}
 
 {% if articles.count > 0 %}
@@ -10,7 +24,7 @@
             Published: {{ article.published }}
         </div>
         <div class="article-intro">
-            <p>{{ article.content }}</p>
+            <p>{{ article.content | truncatewords:100 }}</p>
         </div>
         <a class = "btn btn-inverse art-more" href="/article/{{ article.id }}/">See more</a>
     </div>
