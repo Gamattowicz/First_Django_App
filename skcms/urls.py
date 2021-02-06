@@ -19,6 +19,6 @@ from django.conf import settings
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
     path('article/', include('articles.urls')),
+    path('admin/', admin.site.urls),
 ]
