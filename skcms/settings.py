@@ -128,3 +128,9 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
     '/django/skcms/static/',
 ]
+
+#Path to the directory that will hold user-uploaded files
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+#URL that handles the media served from MEDIA_ROOT 
+MEDIA_URL = '/media/'
