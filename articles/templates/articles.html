@@ -10,14 +10,14 @@
 </head>
 <body>
     <div class="article">
-        <h2><a href="article.html">{{ article.title }}</a></h2>
+        <h2><a href="/article/{{ article.id }}/">{{ article.title }}</a></h2>
         <div class="article-info">
             Published: {{ article.published }}
         </div>
         <div class="article-intro">
             <p>{{ article.content }}</p>
         </div>
-        <a class = "btn btn-inverse art-more">See more</a>
+        <a class = "btn btn-inverse art-more" href="/article/{{ article.id }}/">See more</a>
     </div>
 </body>
 </html>
