@@ -1,9 +1,14 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
     <meta charset="utf-8">
     <title>Django</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap-responsive.min.css' %}">
 </head>
 
 <body>
@@ -13,7 +18,7 @@
     <div class="row">
         <div class="topbar">
             <div class="logo pull-left">
-                <h1><a href="#"><img src="img/poziom.jpg"></a></h1>
+                <h1><a href="#"><img src="img/img1.jpg"></a></h1>
             </div>
             <div class="topbar-links pull-right">
                 <a href="login.html">Login</a> | <a href="#">Registration</a>
