@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Django</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div class="container" id="wrapper">
+
+    <div class="row">
+        <div class="topbar">
+            <div class="logo pull-left">
+                <h1><a href="#"><img src="img/poziom.jpg"></a></h1>
+            </div>
+            <div class="topbar-links pull-right">
+                <a href="login.html">Login</a> | <a href="#">Registration</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div id="mainmenu" class="navbar navbar-inverse"> 
+                <div class="navbar-inner">
+                    <div>
+                        <a class="brand" href="#">CMS</a>
+                        <ul class="nav">
+                            <li class="active"><a href="index.html">Start</a></li>
+                            <li><a href="index.html">Articles</a></li>
+                            <li><a href="index.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="span9">
+            <div  class="row latest">
+                {% block featured %}
+                {% endblock %}
+            </div>
+
+            <div class="row">
+                {% block article %} 
+                {% endblock %}
+            </div>
+
+        </div>
+
+        <div class="span3">
+            <div class="well sidebar-nav">
+                <ul class="nav nav-list">
+                    <li class="nav-header">Your account</li>
+                    <li class="active"><a href="">Profile settings</a></li>
+                    <li><a href="">Notification</a></li>
+                    <li><a href="">Log out</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="span3">
+            <img src="img/vert.jpg" alt="">
+        </div>
+
+
+    </div>
+
+    <div class="row">
+        <hr>
+        <div class="footer-wrap">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus sem ac placerat dapibus. Suspendisse potenti. Vestibulum eget urna tellus.</p>
+        </div>
+    </div>
+
+</div>
+
+</body> 
+
+</html> 
