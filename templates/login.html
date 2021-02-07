@@ -1,0 +1,15 @@
+{% extends "main.html" %}
+
+{% block article %}
+
+<form action="/accounts/auth/" method="post" class="form horizontal well">{% csrf_token %}
+    <label for="username">User:</label>
+    <input type='text' name='username' value='' id='username'>
+    <label for="password">Password:</label>
+    <input type='password' name='password' value='' id='password'>
+    <br>
+    <input type='submit' class="btn btn-inverse" value='LogIN'>
+
+</form>
+
+{% endblock article %}

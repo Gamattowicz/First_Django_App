@@ -7,7 +7,7 @@ class Article(models.Model):
     published = models.DateTimeField(verbose_name= 'Data publikacji')
     image = models.FileField(upload_to='images', verbose_name='Obrazek')
     
-    def __unicode__(self):
+    def __str__(self):
         return self.title
 
 
@@ -17,5 +17,5 @@ class Comment(models.Model):
     published = models.DateTimeField(verbose_name= 'Data publikacji')
     article = models.ForeignKey(Article, on_delete=models.CASCADE)
     
-    def __unicode__(self):
+    def __str__(self):
         return self.name
