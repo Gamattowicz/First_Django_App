@@ -29,6 +29,7 @@ urlpatterns = [
     path('accounts/invalid/', views.invalid_login, name='invalid_login'),
     path('accounts/create_user/', views.create_user, name='create_user'),
     path('accounts/create_user_success/', views.create_user_success, name='create_user_success'),
+    path('accounts/', include('userprofile.urls')),
 ]
 
 if settings.DEBUG:

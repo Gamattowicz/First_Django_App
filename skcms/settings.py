@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'articles',
     'customhtml',
+    'userprofile'
 ]
 
 MIDDLEWARE = [
@@ -136,3 +137,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 #URL that handles the media served from MEDIA_ROOT 
 MEDIA_URL = '/media/'
+
+#APP that manage users profiles
+AUTH_PROFILE_MODULE = 'userprofile.UserProfile'
