@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'articles',
     'customhtml',
-    'userprofile'
+    'userprofile',
+    'notifications',
 ]
 
 MIDDLEWARE = [

@@ -30,6 +30,7 @@ urlpatterns = [
     path('accounts/create_user/', views.create_user, name='create_user'),
     path('accounts/create_user_success/', views.create_user_success, name='create_user_success'),
     path('accounts/', include('userprofile.urls')),
+    path('notification/', include('notifications.urls')),
 ]
 
 if settings.DEBUG:
